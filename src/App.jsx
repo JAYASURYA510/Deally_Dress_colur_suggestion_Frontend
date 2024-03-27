@@ -77,7 +77,6 @@ function App() {
       <Route path="/Alldatahome" element={<Home /> }/>
       <Route path="/Notefound" element={<NoteFound/>} />
       <Route path="/reset-passwod/:id/:token" element={<ResetPassword /> } />
-      {/* <Route path="/HomePage" element={isAuthenticated ? <HomePage />: <Navigate to="/login" />} /> */}
       <Route path="/Suggetion" element={isAuthenticated ? <Suggetion />: <Navigate to="/login"/>} />
       </Route>
      </Routes>
