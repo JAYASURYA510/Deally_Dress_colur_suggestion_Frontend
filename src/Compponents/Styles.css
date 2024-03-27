@@ -1,13 +1,4 @@
-#hero {
-    background-image: url('images/GO\ with\ Fashion\ \(1\).jpg');
-    margin-top: 1px;
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
   
   .headerText{ 
     text-align: center;
