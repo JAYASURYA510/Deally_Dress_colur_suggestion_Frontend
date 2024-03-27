@@ -10,7 +10,7 @@ const Dashboard = () => {
     const [suc, setSuc] = useState()
     const Navigate = useNavigate()
     useEffect(() => {
-        axios.get('http://localhost:2000/dashboard')
+        axios.get('https://dealy-dress-colur-suggestion-backend.onrender.com/dashboard')
         .then(res =>{
             if (res.data === "Success") {
                  setSuc("Successed ok")                

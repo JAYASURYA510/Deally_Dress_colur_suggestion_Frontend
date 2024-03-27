@@ -17,7 +17,7 @@ function ResetPassword() {
     e.preventDefault();
     setLoading(true);
 
-    axios.post(`http://localhost:2000/reset-password/${id}/${token}`, { password })
+    axios.post(`https://dealy-dress-colur-suggestion-backend.onrender.com/reset-password/${id}/${token}`, { password })
       .then((res) => {
         if (res.data.Status === 'Success') {
           setMessage('Password reset successful. Please login with your new password.');

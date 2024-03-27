@@ -26,7 +26,7 @@ const Suggetion = () => {
     if (!token) {
       navigate('/athuntication')
     }else{
-    axios.get('http://localhost:2000/verify')
+    axios.get('https://dealy-dress-colur-suggestion-backend.onrender.com/verify')
         .then(res => {
             if (res.data.status) {
                 // User is verified, you can proceed with further actions
@@ -62,7 +62,7 @@ const Suggetion = () => {
   useEffect(() => {
     const fetchRandomImage = async (dressType) => {
       try {
-        const response = await fetch(`http://localhost:2000/random-image?dressType=${dressType}`);
+        const response = await fetch(`https://dealy-dress-colur-suggestion-backend.onrender.com/random-image?dressType=${dressType}`);
 
         if (!response.ok) {
           throw new Error(`Failed to fetch random image for ${dressType}: ${response.statusText}`);

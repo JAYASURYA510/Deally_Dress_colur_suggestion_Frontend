@@ -7,7 +7,7 @@ import Suggetion from './Suggetion';
 
 const ImageCard = ({ image }) => (
   <div style={{ border: '1px solid #ccc', borderRadius: '5px', padding: '10px', margin: '10px', width: '300px' }}>
-    <img src={`http://localhost:2000/${image.imageUrl}`} alt={image.title} style={{ maxWidth: '100%', height: 'auto' }} />
+    <img src={`https://dealy-dress-colur-suggestion-backend.onrender.com/${image.imageUrl}`} alt={image.title} style={{ maxWidth: '100%', height: 'auto' }} />
     <h3>{image.title}</h3>
     <p>{image.description}</p>
     <p><strong>Dress Type:</strong> {image.dressType}</p> {/* Display Dress Type */}
@@ -21,7 +21,7 @@ function Alldatas() {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await axios.get('http://localhost:2000/images');
+        const response = await axios.get('https://dealy-dress-colur-suggestion-backend.onrender.com/images');
         
         // Modify the imageUrl field in each image object
         const updatedImages = response.data.map(image => ({

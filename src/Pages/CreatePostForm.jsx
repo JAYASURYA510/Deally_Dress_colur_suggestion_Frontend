@@ -27,7 +27,7 @@ const CreatePostForm = () => {
     formData.append('color', color); // Add color to form data
 
     try {
-      const response = await axios.post('http://localhost:2000/upload', formData);
+      const response = await axios.post('https://dealy-dress-colur-suggestion-backend.onrender.com/upload', formData);
       setResponseMessage(response.data.message);
     } catch (error) {
       setResponseMessage(error.response.data.error);

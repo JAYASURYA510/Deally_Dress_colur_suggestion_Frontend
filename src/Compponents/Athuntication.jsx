@@ -34,7 +34,7 @@ const Athuntication = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:2000/signup', {
+      const response = await fetch('https://dealy-dress-colur-suggestion-backend.onrender.com/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
