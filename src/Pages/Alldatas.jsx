@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Suggetion from './suggetion';
+import Suggetion from './Suggetion';
 import CreatePostForm from './CreatePostForm';
 
 

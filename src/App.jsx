@@ -16,7 +16,7 @@ import HomePage from './Compponents/HomePage';
 import ResetPassword from './Compponents/ResetPassword';
 import CreatePostForm from './Pages/CreatePostForm';
 import Home from './Pages/Alldatas';
-import Suggetion from './Pages/suggetion';
+import Suggetion from './Pages/Suggetion';
 import NoteFound from './Pages/NoteFound';
 import Dashboard from './Compponents/Dashboard';
 import Alldatas from './Pages/Alldatas';
