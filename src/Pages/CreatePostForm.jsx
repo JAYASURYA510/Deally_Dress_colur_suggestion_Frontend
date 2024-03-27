@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Form, Alert } from 'react-bootstrap';
-import Home from './Alldatas';
-import Suggetion from './suggetion';
+
+
 
 const CreatePostForm = () => {
   const [title, setTitle] = useState('');
