@@ -69,7 +69,7 @@ const Athuntication = () => {
     }
   
     try {
-      const response = await axios.post('http://localhost:2000/login', {
+      const response = await axios.post('https://dealy-dress-colur-suggestion-backend.onrender.com/login', {
         email,
         password,
       });
@@ -105,7 +105,7 @@ const Athuntication = () => {
   const handleSubmitForgotPassword = (e) => {
     e.preventDefault();
     axios.defaults.withCredentials = true;
-    axios.post('http://localhost:2000/forgot-password', { email })
+    axios.post('https://dealy-dress-colur-suggestion-backend.onrender.com/forgot-password', { email })
       .then(res => {
         if (!email) {
           setForgotPasswordError('gmail are required');
