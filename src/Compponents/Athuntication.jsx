@@ -75,7 +75,7 @@ const Athuntication = () => {
       });
   // Store the token in localStorage  
       localStorage.setItem('token', data.token);
-      Cookies.set('token', data.token, { expires: 70 }); // Set the cookie to expire in 70 days
+      Cookies.set('token', data.token, { expires: 1 }); // Set the cookie to expire in 1 days
   
       const data = response.data;
       if (data.Status === "successful") {
