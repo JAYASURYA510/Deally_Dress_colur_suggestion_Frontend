@@ -19,6 +19,7 @@ import Suggetion from './Pages/Suggetion';
 import NoteFound from './Pages/NoteFound';
 import Dashboard from './Compponents/Dashboard';
 import Alldatas from './Pages/Alldatas';
+import Calendar from './Pages/Calendar';
 
 function App() {
   const isAuthenticated = true; 
@@ -74,6 +75,7 @@ function App() {
       <Route path='/alldatas' element={< Alldatas/>} />
       <Route path="/Dashboard" element={<Dashboard /> } />
       <Route path="/Alldatahome" element={<Home /> }/>
+      <Route path="/calender" element={<Calendar/>} />
       <Route path="/Notefound" element={<NoteFound/>} />
       <Route path="/reset-passwod/:id/:token" element={<ResetPassword /> } />
       <Route path="/Suggetion" element={isAuthenticated ? <Suggetion />: <Navigate to="/login"/>} />

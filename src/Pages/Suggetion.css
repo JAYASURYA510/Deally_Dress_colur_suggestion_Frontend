@@ -39,7 +39,32 @@
       transform: translateX(10px);
     }
   }
+  /* src/components/Calendar.css */
+.calendar {
+  width: 300px;
+  margin: auto;
+  background-color: transparent;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  border-radius: 10%;
+}
+
+.header {
+  padding: 1em;
+  background-color: transparent;
+  text-align: center;
   
+}
+
+.days {
+  display: flex;
+  background-color: transparent;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+}
+
 
 
 @media (max-width: 768px) {
