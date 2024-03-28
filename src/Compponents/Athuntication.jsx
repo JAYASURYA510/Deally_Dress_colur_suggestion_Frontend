@@ -74,13 +74,14 @@ const Athuntication = () => {
         password,
       });
   
-      const data = response.data;
   // Store the token in localStorage
   localStorage.setItem('token', data.token);
       Cookies.set('token', data.token, { expires: 70 }); // Set the cookie to expire in 70 days
 
+      const data = response.data;
+
       
-      if (data.Status === "Success") {
+      if (data.Status === "successful") {
         if (data.role === "admin") {
           navigate('/Dashboard');
         } else {
