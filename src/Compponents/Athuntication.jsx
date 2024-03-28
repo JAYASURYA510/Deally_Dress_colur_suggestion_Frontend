@@ -80,7 +80,7 @@ const Athuntication = () => {
       Cookies.set('token', data.token, { expires: 70 }); // Set the cookie to expire in 70 days
 
       
-      if (data.Status === "successful") {
+      if (data.Status === "Success") {
         if (data.role === "admin") {
           navigate('/Dashboard');
         } else {
